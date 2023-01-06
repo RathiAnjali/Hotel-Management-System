@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane fx:id="adminregistrationstackpane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="510.0" prefWidth="610.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.AdminRegisterController">
+<children>
+
+<AnchorPane fx:id="adminregistration" prefHeight="414.0" prefWidth="641.0">
+   <children>
+      <Label layoutX="41.0" layoutY="124.0" text="Name" textFill="#137c65" />
+      <Label layoutX="41.0" layoutY="185.0" text="Username" textFill="#137c65" />
+      <Label layoutX="41.0" layoutY="250.0" text="Password" textFill="#137c65" />
+      <Label layoutX="339.0" layoutY="124.0" text="Email" textFill="#137c65" />
+      <Label layoutX="41.0" layoutY="315.0" text="Age" textFill="#137c65" />
+      <Label layoutX="339.0" layoutY="185.0" text="City" textFill="#137c65" />
+      <Label layoutX="339.0" layoutY="250.0" text="State" textFill="#137c65" />
+      <TextField fx:id="txtAdminRegisterName" layoutX="123.0" layoutY="120.0" />
+      <TextField fx:id="txtAdminRegisterUsername" layoutX="123.0" layoutY="185.0" />
+      <TextField fx:id="txtAdminRegisterEmail" layoutX="421.0" layoutY="120.0" />
+      <PasswordField fx:id="txtAdminRegisterPassword" layoutX="123.0" layoutY="250.0" />
+      <TextField fx:id="txtAdminRegisterAge" layoutX="123.0" layoutY="315.0" />
+      <Label layoutX="339.0" layoutY="315.0" text="Pincode" textFill="#137c65" />
+      <TextField fx:id="txtAdminRegisterCity" layoutX="421.0" layoutY="185.0" />
+      <TextField fx:id="txtAdminRegisterState" layoutX="421.0" layoutY="250.0" />
+      <TextField fx:id="txtAdminRegisterPincode" layoutX="421.0" layoutY="315.0" />
+      <Button layoutX="146.0" layoutY="383.0" mnemonicParsing="false" onAction="#onAdminRegisterSubmit" prefHeight="39.0" prefWidth="162.0" text="Submit" textFill="#137c65">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <Button layoutX="375.0" layoutY="382.0" mnemonicParsing="false" onAction="#onAdminRegisterReset" prefHeight="39.0" prefWidth="149.0" text="Reset" textFill="#137c65">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#onAdminRegisterBack" text="Back" textFill="#137c65">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <Label fx:id="adminregisterlblError" layoutX="24.0" layoutY="366.0" textFill="#dd1126" />
+            <Label layoutX="248.0" layoutY="29.0" text="Admin - Register" textFill="#137c65">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+   </children>
+</AnchorPane>
+</children>
+</StackPane>

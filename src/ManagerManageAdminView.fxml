@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="manager_manage_admin_view_pane" prefHeight="600.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.ManagerManageAdminController">
+	<children>
+		<Button layoutX="64.0" layoutY="41.0" mnemonicParsing="false" onAction="#onManageAdminBack" prefHeight="27.0" prefWidth="75.0" text="Back" textFill="#137c65">
+			<font>
+				<Font name="System Bold" size="13.0" />
+			</font>
+		</Button>
+		<Button layoutX="554.0" layoutY="41.0" mnemonicParsing="false" onAction="#onManageAdminExit" prefHeight="27.0" prefWidth="75.0" text="Exit" textFill="#137c65">
+			<font>
+				<Font name="System Bold" size="13.0" />
+			</font>
+		</Button>
+		<TableView fx:id="tblAdmins" layoutX="51.0" layoutY="129.0" prefHeight="451.0" prefWidth="598.0">
+			<columns>
+				<TableColumn fx:id="aid" prefWidth="82.0" text="ID" />
+				<TableColumn fx:id="aname" prefWidth="132.0" text="NAME" />
+				<TableColumn fx:id="aemail" prefWidth="241.0" text="EMAIL" />
+				<TableColumn fx:id="astatus" prefWidth="142.0" text="STATUS" />
+				<TableColumn fx:id="aname" prefWidth="108.0" text="NAME" />
+				<TableColumn fx:id="aemail" prefWidth="123.0" text="EMAIL" />
+				<TableColumn fx:id="astatus" prefWidth="143.0" text="STATUS" />
+				<TableColumn fx:id="actionButton" minWidth="0.0" prefWidth="141.0" text="DELETE ADMIN" />
+			</columns>
+		</TableView>
+		<Button layoutX="290.0" layoutY="92.0" mnemonicParsing="false" onAction="#onRefreshAdminList" prefHeight="27.0" prefWidth="175.0" text="Refresh Admin List" textFill="#137c65">
+			<font>
+				<Font name="System Bold" size="13.0" />
+			</font>
+		</Button>
+
+	</children>
+</AnchorPane>

@@ -1,0 +1,84 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+
+.root{
+	 -fx-font-weight:bold;
+     -fx-background-image: url("/images/img1.jpg");
+     -fx-cursor:pointer;  
+   }
+.button{
+	    -fx-background-color: #b9edcf; 	/*#DEB887;*/
+        -fx-font-color:white;
+        -fx-background-radius:50;
+}
+.button:hover{
+    -fx-background-color: -fx-shadow-highlight-color, -fx-outer-border, -fx-inner-border, -fx-body-color;
+    -fx-background-insets: 0 0 -1 0, 0, 1, 2;
+    -fx-background-radius: 50;
+    -fx-padding: 0.333333em 0.666667em 0.333333em 0.666667em; /* 4 8 4 8 */
+    -fx-text-fill: -fx-text-base-color;
+    -fx-alignment: CENTER;
+    -fx-content-display: LEFT;
+}
+.button:pressed {
+    -fx-effect: dropshadow( gaussian ,  #137c65 , 10,0,0,1 ); 
+    -fx-effect: innershadow( gaussian , #137c65 , 20,0,0,0 );
+}
+.most-contacted-layout{
+	-fx-background-radius:0,50,50,50;
+}
+.border{
+	-fx-border-color: #137c65;
+	-fx-border-width: 1.5px;
+}
+.loginbg{
+	-fx-background-color: #137c65; 
+}
+.title{
+	-fx-font-family : "serief";  
+	        -fx-font-color:#137c65;
+	
+	/*-fx-background-color : #137c65;*/
+	/*-fx-effect:dropshadow(one-pass-box,rgb(255,255,255),8,0.0,2,0); */
+}
+#home_admin_pane{
+		     -fx-background-color: #FFFAFA;
+	
+}
+#home_customer_pane{
+		     -fx-background-color: #FFFAFA;
+	
+}
+#home_manager_pane{
+		     -fx-background-color: #FFFAFA;
+	
+}
+#home_exit_pane{
+		     -fx-background-color: #FFFAFA;
+	
+}
+#reservation_pane{
+		     -fx-background-color: #FFFAFA;
+	}
+	#manage_profile_pane{
+		     -fx-background-color: #FFFAFA;
+	}
+	#admin_page_logout_pane{
+		     -fx-background-color: #FFFAFA;
+	}
+	#reservation_pane{
+		     -fx-background-color: #FFFAFA;
+	}
+	#customer_manage_profile_pane{
+		     -fx-background-color: #FFFAFA;
+	}#customer_page_logout_pane{
+		     -fx-background-color: #FFFAFA;
+	}#availableroom_pane{
+		     -fx-background-color: #FFFAFA;
+	}
+	#managerlogout_pane{
+		     -fx-background-color: #FFFAFA;
+	}#managercustomer_pane{
+		     -fx-background-color: #FFFAFA;
+	}#manageradmin_pane{
+		     -fx-background-color: #FFFAFA;
+	}

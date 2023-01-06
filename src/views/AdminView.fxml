@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane fx:id="admin_view_stackpane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="410.0" prefWidth="610.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.AdminLoginController">
+	<children>
+      <Label fx:id="lblError" style="-fx-background-color: #FFFFFF;" textFill="#dd1126" />
+
+		<AnchorPane fx:id="admin_view_pane" prefHeight="510.0" prefWidth="610.0">
+			<children>
+				<Button layoutX="424.0" layoutY="266.0" mnemonicParsing="false" onAction="#onAdminLogin" prefHeight="25.0" prefWidth="60.0" text="Login">
+					<font>
+						<Font name="System Bold" size="13.0" />
+					</font>
+				</Button>
+				<TextField fx:id="txtAdminUsername" layoutX="427.0" layoutY="78.0" promptText="USER NAME" styleClass="border" stylesheets="@../application/application.css" />
+				<PasswordField fx:id="txtAdminPassword" layoutX="427.0" layoutY="145.0" promptText="PASSWORD" styleClass="border" stylesheets="@../application/application.css" />
+				<Button layoutX="503.0" layoutY="266.0" mnemonicParsing="false" onAction="#onAdminRegister" text="Register">
+					<font>
+						<Font name="System Bold" size="13.0" />
+					</font>
+				</Button>
+				<Label fx:id="lblError" layoutX="397.0" layoutY="289.0" prefHeight="17.0" prefWidth="0.0" style="-fx-background-color: #FFFFFF;" textFill="RED">
+               <font>
+                  <Font size="15.0" />
+               </font></Label>
+				<Button layoutX="288.0" layoutY="27.0" mnemonicParsing="false" onAction="#onAdminBackButton" prefHeight="27.0" prefWidth="54.0" stylesheets="@../application/application.css" text="Back">
+					<font>
+						<Font name="System Bold" size="13.0" />
+					</font>
+				</Button>
+            <ImageView fitHeight="27.0" fitWidth="32.0" layoutX="400.0" layoutY="79.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/UserID.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="25.0" fitWidth="27.0" layoutX="401.0" layoutY="147.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/Password.png" />
+               </image>
+            </ImageView>
+            <AnchorPane prefHeight="411.0" prefWidth="260.0" styleClass="loginbg" stylesheets="@../application/application.css">
+               <children>
+                  <ImageView fitHeight="210.0" fitWidth="162.0" layoutX="40.0" layoutY="95.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/LoginIconAdmin.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <RadioButton layoutX="427.0" layoutY="180.0" mnemonicParsing="false" style="-fx-background-color: #dce0dd;" text="Admin" />
+            <RadioButton layoutX="427.0" layoutY="206.0" mnemonicParsing="false" style="-fx-background-color: #dce0dd;" text="Customer" />
+            <RadioButton layoutX="427.0" layoutY="232.0" mnemonicParsing="false" style="-fx-background-color: #dce0dd;" text="Manager" />
+			</children>
+		</AnchorPane>
+	</children>
+</StackPane>

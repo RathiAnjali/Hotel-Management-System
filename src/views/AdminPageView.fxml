@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane fx:id="stackepane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="510.0" prefWidth="610.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.AdminPageController">
+	<children>
+		<AnchorPane fx:id="admin_page_pane" prefHeight="500.0" prefWidth="600.0">
+			<children>
+				<Pane fx:id="reservation_pane" layoutX="27.0" layoutY="28.0" onMouseClicked="#reservationClicked" onMouseEntered="#mouse_hover_1" onMouseExited="#mouse_exit_1" prefHeight="182.0" prefWidth="200.0">
+					<children>
+						<ImageView fitHeight="134.0" fitWidth="173.0" layoutX="33.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+							<image>
+								<Image url="@../images/available%20room-2_adobespark.jpg" />
+							</image>
+						</ImageView>
+						<Label layoutX="25.0" layoutY="162.0" text="Manage Available Rooms" textFill="#137c65">
+							<font>
+								<Font name="System Bold" size="13.0" />
+							</font>
+						</Label>
+					</children>
+				</Pane>
+				<Pane fx:id="manage_profile_pane" layoutX="342.0" layoutY="28.0" onMouseClicked="#manageprofileClicked" onMouseEntered="#mouse_hover_2" onMouseExited="#mouse_exit_2" prefHeight="182.0" prefWidth="200.0">
+					<children>
+						<ImageView fitHeight="140.0" fitWidth="134.0" layoutX="33.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+							<image>
+								<Image url="@../images/Manage_Profile.png" />
+							</image>
+						</ImageView>
+						<Label layoutX="59.0" layoutY="159.0" text="Manage Profile" textFill="#137c65">
+							<font>
+								<Font name="System Bold" size="13.0" />
+							</font>
+						</Label>
+					</children>
+				</Pane>
+				<Pane fx:id="admin_page_logout_pane" layoutX="205.0" layoutY="275.0" onMouseClicked="#adminpagelogoutClicked" onMouseEntered="#mouse_hover_3" onMouseExited="#mouse_exit_3" prefHeight="182.0" prefWidth="200.0">
+					<children>
+						<ImageView fitHeight="101.0" fitWidth="104.0" layoutX="50.0" layoutY="32.0" pickOnBounds="true" preserveRatio="true">
+							<image>
+								<Image url="@../images/logout.png" />
+							</image>
+						</ImageView>
+						<Label layoutX="72.0" layoutY="160.0" text="Log Out" textFill="#147a62">
+							<font>
+								<Font name="System Bold" size="13.0" />
+							</font>
+						</Label>
+					</children>
+				</Pane>
+			</children>
+		</AnchorPane>
+	</children>
+</StackPane>
